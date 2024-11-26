@@ -1,0 +1,455 @@
+:root {
+    --dark-primary: #1a2633;
+    --dark-secondary: #2c3e50;
+    --accent-color: #3498db;
+    --accent-hover: #2980b9;
+    --text-light: #ecf0f1;
+    --text-dark: #2c3e50;
+    --background-dark: #121b24;
+    --card-background: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    background-color: var(--background-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--dark-primary);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 15px;
+}
+
+.navbar .logo {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-right: 1.5rem;
+}
+
+.navbar nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.navbar .cta {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .cta:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the entire area */
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+
+/* Sections General Styling */
+.services, .testimonials, .gallery, .contact {
+    background-color: var(--dark-secondary);
+    padding: 4rem 0;
+}
+
+.services .container,
+.testimonials .container,
+.gallery .container,
+.contact .container {
+    text-align: center;
+}
+
+/* Service Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-item {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.service-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-item {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-item span {
+    color: #ffc107;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    filter: brightness(0.8);
+}
+
+.gallery-grid img:hover {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact {
+    background-color: #000000;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #38618C; /* Prominent secondary color */
+    text-decoration: none;
+    font-size: 2rem; /* Much larger font size */
+    font-weight: 600; /* Slightly bolder */
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0A2342; /* Darkens on hover */
+    text-decoration: underline;
+}
+
+.contact button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Snowflake Effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fall linear infinite;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .service-grid, 
+    .testimonial-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Updated Navbar Styling */
+.navbar {
+    background-color: var(--dark-primary);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(26, 38, 51, 0.85); /* Slightly transparent */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px; /* Increased max-width */
+    padding: 1rem 2rem; /* Increased horizontal padding */
+}
+
+.navbar .logo {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    transition: transform 0.3s ease;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem; /* Added right margin to create more space */
+}
+
+.navbar nav ul li {
+    margin: 0 1rem;
+}
+
+.navbar nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.navbar nav ul li a:hover::before {
+    width: 100%;
+}
+
+.navbar .cta {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar .cta:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .navbar nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-image: url('ice-control.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.hero .container {
+    position: relative; /* Ensures the text is positioned properly within the section */
+    z-index: 2; /* Keeps the text above the background image */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Ensures the text is readable */
+}
+
+.hero .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero .btn-primary:hover {
+    background-color: #0056b3;
+}
