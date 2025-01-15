@@ -1,165 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional snow removal services in Colorado. We provide residential and commercial snow clearing, ice control, and winter maintenance solutions across the state.">
-    <meta name="keywords" content="snow removal, Colorado, residential snow clearing, commercial snow plowing, ice management">
-    <meta name="author" content="DMG & Bros.">
-    <title>DMG & Bros. Snow Removal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="images/logo.PNG" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Primary Meta Tags -->
+  <title>DMG & Bros. Snow Removal – Colorado’s Reliable Snow Experts</title>
+  <meta name="description" content="Professional snow removal services in Colorado. We provide residential and commercial snow clearing, ice control, and winter maintenance solutions across the state.">
+  <meta name="keywords" content="snow removal, Colorado, residential snow clearing, commercial snow plowing, ice management">
+  <meta name="author" content="DMG & Bros.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="DMG & Bros. Snow Removal – Colorado’s Reliable Snow Experts" />
+  <meta property="og:description" content="Professional snow removal services in Colorado for homes and businesses. Reliable, efficient, and always ready for the next snowfall." />
+  <meta property="og:image" content="https://example.com/images/social-share.jpg" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DMG & Bros. Snow Removal – Colorado’s Reliable Snow Experts" />
+  <meta name="twitter:description" content="Professional snow removal services in Colorado for homes and businesses. Reliable, efficient, and always ready for the next snowfall." />
+  <meta name="twitter:image" content="https://example.com/images/social-share.jpg" />
+
+  <!-- Preconnect for Google Fonts (Performance) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.PNG" type="image/x-icon">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD: Local Business Schema (update placeholders as needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DMG & Bros. Snow Removal",
+    "image": "https://example.com/images/logo.PNG",
+    "@id": "https://example.com/#organization",
+    "url": "https://example.com",
+    "telephone": "+17205600078",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Main St",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "postalCode": "80202",
+      "addressCountry": "US"
+    },
+    "description": "Professional snow removal services in Colorado for both residential and commercial clients.",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.7392",
+      "longitude": "-104.9903"
+    },
+    "priceRange": "$$"
+  }
+  </script>
 
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar" role="banner">
-        <div class="container">
-            <a href="/" class="logo" aria-label="DMG & Bros. Home">DMG & Bros.</a>
-            <i class="bx bx-menu" id="menu-icon"></i> <!-- This is the clickable menu icon -->
-            <nav role="navigation">
-                <ul>
-                    <li><a href="#services" tabindex="0">Services</a></li>
-                    <li><a href="#testimonials" tabindex="0">Testimonials</a></li>
-                    <li><a href="#gallery" tabindex="0">Gallery</a></li>
-                    <li><a href="#contact" tabindex="0">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="contact-info">
-                <span><a href="tel:+17205600078" class="contact-link">(720) 560-0078</a></span>
-            </div>
-        </div>
-    </header>
+  
+  <!-- Skip to Main Content (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="container">
-            <video 
-                autoplay 
-                muted 
-                loop 
-                playsinline 
-                preload="auto" 
-                class="hero-video" 
-                aria-label="Snow removal demonstration video"
-            >
-                <source src="videos/IMG_2864.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="hero-text">
-                <h1 id="hero-title">Colorado's Snow Removal Experts</h1>
-                <p>Reliable, Professional, All-Season Service</p>
-                <a href="mailto:dmgtruckingllc2023@gmail.com" class="btn-primary">Contact Us</a>
-            </div>
+  <!-- Header -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="/" class="logo" aria-label="DMG & Bros. Home">DMG & Bros.</a>
+
+      <!-- Mobile Menu Icon -->
+      <i class="bx bx-menu" id="menu-icon" aria-hidden="true"></i>
+
+      <!-- Main Navigation with ARIA Label -->
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services" tabindex="0">Services</a></li>
+          <li><a href="#testimonials" tabindex="0">Testimonials</a></li>
+          <li><a href="#gallery" tabindex="0">Gallery</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="contact-info">
+        <span>
+          <a href="tel:+17205600078" class="contact-link">(720) 560-0078</a>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        preload="auto"
+        class="hero-video" 
+        aria-label="Snow removal demonstration video"
+        poster="images/hero-poster.jpg"  <!-- Poster image for better UX -->
+      >
+        <source src="videos/IMG_2864.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-text">
+        <h1 id="hero-title">Colorado's Snow Removal Experts</h1>
+        <p>Reliable, Professional, All-Season Service</p>
+        <a href="mailto:dmgtruckingllc2023@gmail.com" class="btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+    <!-- Services -->
+    <section id="services" class="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Our Services</h2>
+        <p>
+          We proudly serve residential and commercial clients throughout Colorado. 
+          Whether you’re in Denver, Boulder, Aurora, or any nearby area, 
+          our team is equipped to handle your snow removal needs.
+        </p>
+        <div class="service-grid">
+          <div class="service-item">
+            <img src="images/residential.png" alt="Residential Snow Removal" loading="lazy">
+            <h3>Residential Snow Removal</h3>
+            <p>Keep your driveways and walkways safe and snow-free.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/commercial.png" alt="Commercial Snow Removal" loading="lazy">
+            <h3>Commercial Snow Removal</h3>
+            <p>Efficient clearing for parking lots, sidewalks, and more.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/ice-control.jpg" alt="Ice Control" loading="lazy">
+            <h3>Ice Control</h3>
+            <p>Salt application for proactive and effective ice management.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Main Content Wrapper -->
-    <main id="main-content">
-        <!-- Services -->
-        <section id="services" class="services" aria-labelledby="services-title">
-            <div class="container">
-                <h2 id="services-title">Our Services</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <img src="images/residential.png" alt="Residential Snow Removal" loading="lazy">
-                        <h3>Residential Snow Removal</h3>
-                        <p>Keep your driveways and walkways safe and snow-free.</p>
-                    </div>
-                    <div class="service-item">
-                        <img src="images/commercial.png" alt="Commercial Snow Removal" loading="lazy">
-                        <h3>Commercial Snow Removal</h3>
-                        <p>Efficient clearing for parking lots, sidewalks, and more.</p>
-                    </div>
-                    <div class="service-item">
-                        <img src="images/ice-control.jpg" alt="Ice Control" loading="lazy">
-                        <h3>Ice Control</h3>
-                        <p>Salt application for proactive and effective ice management.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
-            <div class="container">
-                <h2 id="testimonials-title">What Our Customers Say</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-item">
-                        <p>"Incredible service! Always on time and very detailed."</p>
-                        <span aria-label="5 out of 5 star rating">★★★★★</span>
-                        <h4>- Emily R.</h4>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"The team is fantastic! Reliable and efficient every time."</p>
-                        <span aria-label="5 out of 5 star rating">★★★★★</span>
-                        <h4>- John D.</h4>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"Highly recommend DMG & Bros. for all snow removal needs."</p>
-                        <span aria-label="5 out of 5 star rating">★★★★★</span>
-                        <h4>- Sarah K.</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery -->
-        <section id="gallery" class="gallery" aria-labelledby="gallery-title">
-            <div class="container">
-                <h2 id="gallery-title">Our Work</h2>
-                <div class="gallery-grid">
-                    <img src="images/gallery1.jpg" alt="Driveway cleared of snow" loading="lazy">
-                    <img src="images/gallery2.jpg" alt="Snow plowing in action" loading="lazy">
-                    <img src="images/gallery3.jpg" alt="Safe walkways after snow removal" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact" aria-labelledby="contact-title">
-            <div class="container">
-                <h2 id="contact-title" class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">
-                    Have questions or need more information? Reach out to us!
-                </p>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <div class="contact-icon-box">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>
-                            <a href="mailto:dmgtruckingllc2023@gmail.com" class="contact-link">
-                                dmgtruckingllc2023@gmail.com
-                            </a>
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon-box">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Phone</h3>
-                        <p>
-                            <a href="tel:+17205600078" class="contact-link">
-                                (720) 560-0078
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer role="contentinfo">
-        <div class="container">
-            <p>&copy; 2024 DMG & Bros. Snow Removal Services. All Rights Reserved.</p>
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">What Our Customers Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-item">
+            <p>"Incredible service! Always on time and very detailed."</p>
+            <!-- Star rating with accessible label -->
+            <span role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <h4>- Emily R.</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>"The team is fantastic! Reliable and efficient every time."</p>
+            <span role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <h4>- John D.</h4>
+          </div>
+          <div class="testimonial-item">
+            <p>"Highly recommend DMG & Bros. for all snow removal needs."</p>
+            <span role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            <h4>- Sarah K.</h4>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title">Our Work</h2>
+        <div class="gallery-grid">
+          <img src="images/gallery1.jpg" alt="Driveway cleared of snow" loading="lazy">
+          <img src="images/gallery2.jpg" alt="Snow plowing in action" loading="lazy">
+          <img src="images/gallery3.jpg" alt="Safe walkways after snow removal" loading="lazy">
+          <img src="images/gallery4.jpg" alt="Safe walkways after snow removal" loading="lazy">
+          <img src="images/gallery5.jpg" alt="Safe walkways after snow removal" loading="lazy">
+          <img src="images/gallery6.jpg" alt="Safe walkways after snow removal" loading="lazy">
+          <img src="images/gallery7.jpg" alt="Safe walkways after snow removal" loading="lazy">
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          Have questions or need more information? Reach out to us!
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:dmgtruckingllc2023@gmail.com" class="contact-link">
+                dmgtruckingllc2023@gmail.com
+              </a>
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Phone</h3>
+            <p>
+              <a href="tel:+17205600078" class="contact-link">
+                (720) 560-0078
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2024 DMG & Bros. Snow Removal Services. All Rights Reserved.</p>
+      <!-- Optionally add a small site nav or 'About Us' snippet here -->
+    </div>
+  </footer>
+
 </body>
 </html>
